@@ -22,7 +22,7 @@ function Projects() {
               isBlog={false}
               title="AppConnect"
               description="APPConnect is a dedicated platform for managing missions or projects. It is designed to help professionals and companies organize, plan, and track their tasks and activities without going through an intermediary."
-              ghLink="https://github.com/mohamedlrouabah1/app-connect"
+              ghLink="https://github.com/mohamedlrouabah1/onconnect"
               demoLink="https://mohamedlrouabah1.github.io/onconnect/"
             />
           </Col>
