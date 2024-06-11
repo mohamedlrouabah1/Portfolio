@@ -6,6 +6,9 @@ import onconnect from "../../Assets/Projects/onconnect.png";
 import alpesTransport from "../../Assets/Projects/alpestransport.png";
 import StellaStone from "../../Assets/Projects/StellaStone.png";
 import Foodies from "../../Assets/Projects/foodies.png";
+import TextTranslation from "../../Assets/Projects/TextTranslation.png";
+import BitcoinPrediction from "../../Assets/Projects/BitcoinPrediction.png";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -63,13 +66,20 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Foodies}
+              imgPath={TextTranslation}
               isBlog={false}
-              title="Foodies"
-              description="The Foodies application main use is to use RDFs graph scrapped from website page and display them in format of annuary of restaurants and their menus."
-              ghLink="https://github.com/mohamedlrouabah1/WEBSEM"
-              demoLink="https://foodies-ldp-e2f3380fb9a9.herokuapp.com/"  
-              demoLink2="https://dsc2-sw-food-delivery-b3a7e3e908fb.herokuapp.com/#/"            
+              title="Text Translation"
+              description="make Text Translation using transformers/GRU and LSTM models."
+              ghLink="https://github.com/mohamedlrouabah1/DEEPL"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BitcoinPrediction}
+              isBlog={false}
+              title="BitcoinPrediction"
+              description="make Bitcoin Prediction models and historical data to get the best prediction."
+              ghLink="https://github.com/mohamedlrouabah1/BIGDATA"
             />
           </Col>
         </Row>
