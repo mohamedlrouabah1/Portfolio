@@ -44,7 +44,7 @@ function Projects() {
               imgPath={StellaStone}
               isBlog={false}
               title="StellaStone"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="The StellaStone app is a program designed to perform space travel simulations. It offers you the opportunity to experience or relive historical moments, to explore and deepen your knowledge of space while having fun. Learning how to use this software is not complex, but requires a good understanding of the terms, concepts, and methods used in the application. It is recommended that you consult this manual before using the software. This user guide provides an overview of the app's features and features, as well as instructions on how to master these various features."
               ghLink="https://github.com/mohamedlrouabah1/StellaStone"
               demoLink="https://mohamedlrouabah1.github.io/StellaStone"              
             />
