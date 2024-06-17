@@ -37,7 +37,7 @@ function Projects() {
               imgPath={alpesTransport}
               isBlog={false}
               title="alpesTransport"
-              description="Wikibase is an open-source platform developed by the Wikimedia Foundation that stores, manages and publishes structured and linked data using Semantic Web technologies such as RDF (Resource Description Framework) and SPARQL (SPARQL Protocol and RDF Query Language)."
+              description="Personal project undertaken during my academic coursework; the objective was to scrape transportation websites for use with Wikibase"
               ghLink="https://github.com/mohamedlrouabah1/alpestransport"
               // demoLink="https://mohamedlrouabah1.github.io/alpestransport/"
             />
@@ -48,7 +48,7 @@ function Projects() {
               imgPath={StellaStone}
               isBlog={false}
               title="StellaStone"
-              description="The StellaStone app is a program designed to perform space travel simulations. It offers you the opportunity to experience or relive historical moments, to explore and deepen your knowledge of space while having fun. Learning how to use this software is not complex, but requires a good understanding of the terms, concepts, and methods used in the application. It is recommended that you consult this manual before using the software. This user guide provides an overview of the app's features and features, as well as instructions on how to master these various features."
+              description="The StellaStone app is a simulation program for space travel experiences. It allows users to engage with historical events, explore space, and deepen their knowledge while enjoying an interactive experience. "
               ghLink="https://github.com/mohamedlrouabah1/StellaStone"
               // demoLink="https://mohamedlrouabah1.github.io/StellaStone"              
             />
