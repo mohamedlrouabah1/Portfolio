@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.7120e9d6.css",
-    "main.js": "/Portfolio/static/js/main.876e0165.js",
+    "main.js": "/Portfolio/static/js/main.f99ce3a7.js",
     "static/js/770.b477def6.chunk.js": "/Portfolio/static/js/770.b477def6.chunk.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/CV_2024-06-17_Mohammed_Rouabah.pdf": "/Portfolio/static/media/CV_2024-06-17_Mohammed_Rouabah.23dfc286abc766d11c81.pdf",
+    "static/media/CV_2024-06-22_Mohammed_Rouabah_fr.pdf": "/Portfolio/static/media/CV_2024-06-22_Mohammed_Rouabah_fr.725e3760cdfe81a538ab.pdf",
     "static/media/alpestransport.png": "/Portfolio/static/media/alpestransport.68444ef4f0dac65e86ca.png",
     "static/media/foodies.png": "/Portfolio/static/media/foodies.2b34ae673812ae6885d2.png",
     "static/media/StellaStone.png": "/Portfolio/static/media/StellaStone.42b123461302a72bd4a4.png",
@@ -19,12 +20,12 @@
     "static/media/pre.svg": "/Portfolio/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/Portfolio/index.html",
     "main.7120e9d6.css.map": "/Portfolio/static/css/main.7120e9d6.css.map",
-    "main.876e0165.js.map": "/Portfolio/static/js/main.876e0165.js.map",
+    "main.f99ce3a7.js.map": "/Portfolio/static/js/main.f99ce3a7.js.map",
     "770.b477def6.chunk.js.map": "/Portfolio/static/js/770.b477def6.chunk.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7120e9d6.css",
-    "static/js/main.876e0165.js"
+    "static/js/main.f99ce3a7.js"
   ]
 }
