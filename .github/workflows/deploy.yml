@@ -31,7 +31,7 @@ jobs:
     - name: Build
       env:
         REACT_APP_DEEPL_API_KEY: ${{ secrets.REACT_APP_DEEPL_API_KEY }}
-      run: npm run build
+      run: npm run build -- --no-warnings
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.4
