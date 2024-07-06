@@ -12,10 +12,14 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
+import { useTranslation } from "react-i18next"; 
+import DropdownButton from "react-bootstrap/DropdownButton";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function NavBar() {
+  const { t, i18n } = useTranslation(); 
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -29,6 +33,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  // Function to change language
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -37,7 +46,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/Portfolio" className="d-flex">
+        <Navbar.Brand as={Link} to="/Portfolio" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -54,7 +63,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/Portfolio" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('navbar.home')}
               </Nav.Link>
             </Nav.Item>
 
@@ -64,7 +73,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('navbar.about')}
               </Nav.Link>
             </Nav.Item>
 
@@ -77,7 +86,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t('navbar.projects')}
               </Nav.Link>
             </Nav.Item>
 
@@ -87,7 +96,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {t('navbar.resume')}
               </Nav.Link>
             </Nav.Item>
 
@@ -101,6 +110,22 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
+            {/* Dropdown for language selection */}
+            <Nav.Item className="fork-btn">
+            <DropdownButton
+              title="Language"
+              align="end"
+              id="dropdown-menu-align-end"
+            >
+              <Dropdown.Item onClick={() => changeLanguage("en")}>
+                English
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => changeLanguage("fr")}>
+                Français
+              </Dropdown.Item>
+            </DropdownButton>
+          </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

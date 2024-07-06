@@ -7,9 +7,11 @@ import pdf2 from "../../Assets/../Assets/CV_2024-07-06_Mohammed_Rouabah_fr.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useTranslation } from "react-i18next";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
+  const { t } = useTranslation();
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download English CV
+            &nbsp;{t('resume.downloadEnglishCV')}
           </Button>
           &nbsp;
           <Button
@@ -38,7 +40,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download French CV
+            &nbsp;{t('resume.downloadFrenchCV')}
           </Button>
         </Row>
 
@@ -56,7 +58,7 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;{t('resume.downloadCV')}
           </Button>
         </Row>
       </Container>

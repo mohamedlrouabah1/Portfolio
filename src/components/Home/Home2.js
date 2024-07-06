@@ -6,32 +6,32 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn, FaMailBulk } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Home2() {
+  const { t } = useTranslation();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              {t('home2.intro')}
+              <span className="purple"> {t('home2.title')}</span>
             </h1>
             <p className="home-about-body">
-              I'm Computer Science student, with a passion for developing and creating content.
+              {t('home2.body')}
               <br />
-              <br />I am fluent in classics like
+              <br />{t('home2.languages')}
               <i>
-                <b className="purple"> Java, Javascript and Python. </b>
+                <b className="purple"> {t('home2.skills')}</b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              {t('home2.interests')}
               <i>
-                <b className="purple">Cloud Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Salesforce.
-                </b>
+                <b className="purple"> {t('home2.interestsDetail')}</b>
               </i>
               <br />
               
@@ -45,9 +45,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>{t('home2.findMe')}</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              {t('home2.connect')}
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -87,4 +87,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

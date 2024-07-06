@@ -1,32 +1,35 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { useTranslation } from "react-i18next";
 
 function AboutCard() {
+  const { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Mohammed Rouabah  </span>
-            from <span className="purple"> Lyon, France.</span>
+            {t("about.quote1")}<span className="purple"> {t("about.quote2")} </span>
+            {t("about.quote3")} <span className="purple"> {t("about.quote4")} </span>
             <br />
-            I'm currently learning Salesforce and MuleSoft through my internship.
+            {t("about.quote5")}
             <br />
-            I'm about to completed my Master's degree in Computer Science from the University of Jean Monnet.
+            {t("about.quote6")}
             <br />
+            {t("about.quote7")}
             <br />
-            Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> {t("about.activities.playingGames")}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Microsoldering
+              <ImPointRight /> {t("about.activities.microsoldering")}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> {t("about.activities.travelling")}
             </li>
           </ul>
         </blockquote>
