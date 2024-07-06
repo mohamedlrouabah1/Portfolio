@@ -27,12 +27,20 @@ const resources = {
         name: 'MOHAMMED ROUABAH'
       },
       home2: {
-        introduction: 'LET ME INTRODUCE MYSELF',
+        introduction: 'LET ME',
+        intro2: "INTRODUCE",
+        intro3: "MYSELF",
         aboutMe: "I'm a Computer Science student, with a passion for developing and creating content.",
-        fluentIn: 'I am fluent in classics like Java, Javascript, and Python.',
-        interests: "My field of Interest's are building new Cloud Technologies and Products and also in areas related to Salesforce.",
+        fluentIn: 'I am fluent in classics like',
+        fluent2: 'Java, Javascript, and Python.',
+        interests: "My field of Interest's are building new",
+        interests2: "Cloud Technologies and Products",
+        int3: "and also in areas related to",
+        int4: "Salesforce.",
         findMeOn: 'FIND ME ON',
-        connectWithMe: 'Feel free to connect with me'
+        connectWithMe: 'Feel free to',
+        connectWithMe2: 'connect',
+        connectWithMe3: 'with me',
       },
       projects: {
         recentWorks: 'My Recent',
@@ -92,13 +100,21 @@ const resources = {
         name: 'MOHAMMED ROUABAH'
       },
       home2: {
-        introduction: 'PERMETTEZ-MOI DE ME PRÉSENTER',
+        introduction: 'PERMETTEZ-MOI ',
+        intro2: "DE ME",
+        intro3: "PRÉSENTER",
         aboutMe: "Je suis étudiant en informatique, passionné par le développement et la création de contenu.",
-        fluentIn: "Je maîtrise des langages classiques comme Java, Javascript et Python.",
-        interests: "Mes domaines d'intérêt incluent le développement de nouvelles technologies et produits Cloud ainsi que des domaines liés à Salesforce.",
-        findMeOn: 'ME TROUVER SUR',
-        connectWithMe: 'N\'hésitez pas à me contacter'
-      },
+        fluentIn: "Je suis à l'aise avec des langages classiques tels que",
+        fluent2: 'Java, Javascript et Python.',
+        interests: "Mes domaines d'intérêt incluent les nouvelles",
+        interests2: "technologies et produits du Cloud",
+        int3: "ainsi que dans des domaines liés à",
+        int4: "Salesforce.",
+        findMeOn: 'RETROUVEZ-MOI SUR',
+        connectWithMe: 'N\'hésitez',
+        connectWithMe2: 'pas à me',
+        connectWithMe3: 'contacter',
+      },      
       projects: {
         recentWorks: 'Mes Récentes',
         works: 'Projets',

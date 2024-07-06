@@ -17,21 +17,24 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              {t('home2.intro')}
-              <span className="purple"> {t('home2.title')}</span>
+              {t('home2.introduction')} <span className="purple">  {t('home2.intro2')} </span>  {t('home2.intro3')}
             </h1>
             <p className="home-about-body">
-              {t('home2.body')}
+              {t('home2.aboutMe')}
               <br />
-              <br />{t('home2.languages')}
+              <br />{t('home2.fluentIn')}
               <i>
-                <b className="purple"> {t('home2.skills')}</b>
+                <b className="purple"> {t('home2.fluent2')} </b>
               </i>
               <br />
               <br />
-              {t('home2.interests')}
+              {t('home2.interests')}&nbsp;
               <i>
-                <b className="purple"> {t('home2.interestsDetail')}</b>
+                <b className="purple"> {t('home2.interests2')} </b>
+                {t('home2.int3')}{" "}
+                <b className="purple">
+                {t('home2.int4')}
+                </b>
               </i>
               <br />
               
@@ -47,7 +50,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>{t('home2.findMeOn')}</h1>
             <p>
-              {t('home2.connectWithMe')}
+            {t('home2.connectWithMe')}<span className="purple"> {t('home2.connectWithMe2')} </span>{t('home2.connectWithMe3')}
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -87,5 +90,4 @@ function Home2() {
     </Container>
   );
 }
-
 export default Home2;
