@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/CV_2024-06-17_Mohammed_Rouabah.pdf";
+import pdf from "../../Assets/../Assets/CV_2024-06-22_Mohammed_Rouabah_en.pdf";
 import pdf2 from "../../Assets/../Assets/CV_2024-06-22_Mohammed_Rouabah_fr.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -30,7 +30,7 @@ function ResumeNew() {
             <AiOutlineDownload />
             &nbsp;Download English CV
           </Button>
-          <br />
+          &nbsp;
           <Button
             variant="primary"
             href={pdf2}
